@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<lalibe>
+<Param>
+  <InlineMeasurements>
+
+<elem>
+  <Name>QEDM_PRODUCT_FIELD</Name>
+  <Frequency>1</Frequency>
+  <Param>
+    <external_field>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/cfgs_u1/nt64nx48ny48nz48beta1xi0m0.0677-2.bin</external_field>
+    <quark_type>up</quark_type>
+    <coupling>3.0282212096456423e-01</coupling>
+  </Param>
+  <NamedObject>
+    <gauge_in_id>default_gauge_field</gauge_in_id>
+    <gauge_out_id>U_field</gauge_out_id>
+  </NamedObject>
+</elem>
+
+<elem>
+  <Name>QEDM_PRODUCT_FIELD</Name>
+  <Frequency>1</Frequency>
+  <Param>
+    <external_field>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/cfgs_u1/nt64nx48ny48nz48beta1xi0m0.0677-2.bin</external_field>
+    <quark_type>down</quark_type>
+    <coupling>3.0282212096456423e-01</coupling>
+  </Param>
+  <NamedObject>
+    <gauge_in_id>default_gauge_field</gauge_in_id>
+    <gauge_out_id>D_field</gauge_out_id>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>QIO_READ_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_U</object_id>
+  <object_type>LatticePropagator</object_type>
+</NamedObject>
+<File>
+  <file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/src/src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_U.lime</file_name>
+  <file_volfmt>SINGLEFILE</file_volfmt>
+  <parallel_io>true</parallel_io>
+</File>
+</elem>
+
+<elem>
+<Name>PROPAGATOR</Name>
+<Frequency>1</Frequency>
+<Param>
+<version>10</version>
+<quarkSpinType>FULL</quarkSpinType>
+<obsvP>true</obsvP>
+<q_mp_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U_MP</q_mp_id>
+<numRetries>1</numRetries>
+<FermionAction>
+<FermAct>UNPRECONDITIONED_NEF</FermAct>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.00195</Mass>
+  <FermionBC>
+    <FermBC>SIMPLE_FERMBC</FermBC>
+    <boundary>1 1 1 -1</boundary>
+  </FermionBC>
+</FermionAction>
+<InvertParam>
+<invType>QUDA_NEF_INVERTER</invType>
+<DoCGNR>true</DoCGNR>
+<MaxIter>13000</MaxIter>
+<RsdTarget>1.e-7</RsdTarget>
+<Delta>0.1</Delta>
+<RsdToleranceFactor>80</RsdToleranceFactor>
+<MaxResIncrease>1</MaxResIncrease>
+<SolverType>CG</SolverType>
+<Verbose>false</Verbose>
+<AsymmetricLinop>false</AsymmetricLinop>
+<CudaReconstruct>RECONS_NONE</CudaReconstruct>
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+<CudaSloppyReconstruct>RECONS_NONE</CudaSloppyReconstruct>
+<AxialGaugeFix>false</AxialGaugeFix>
+<AutotuneDslash>true</AutotuneDslash>
+<MatPCType>EVEN_EVEN</MatPCType>
+<checkSolution>true</checkSolution>
+<NEFParams>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.00195</Mass>
+  <clovCoeff>0</clovCoeff>
+</NEFParams>
+<AntiPeriodicT>true</AntiPeriodicT>
+</InvertParam>
+</Param>
+<NamedObject>
+  <gauge_id>U_field</gauge_id>
+  <source_id>src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_U</source_id>
+  <prop_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U</prop_id>
+</NamedObject>
+<xml_file>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/xml/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U.out.xml</xml_file>
+</elem>
+
+<elem>
+<Name>QIO_READ_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_D</object_id>
+  <object_type>LatticePropagator</object_type>
+</NamedObject>
+<File>
+  <file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/src/src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_D.lime</file_name>
+  <file_volfmt>SINGLEFILE</file_volfmt>
+  <parallel_io>true</parallel_io>
+</File>
+</elem>
+
+<elem>
+<Name>PROPAGATOR</Name>
+<Frequency>1</Frequency>
+<Param>
+<version>10</version>
+<quarkSpinType>FULL</quarkSpinType>
+<obsvP>true</obsvP>
+<q_mp_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D_MP</q_mp_id>
+<numRetries>1</numRetries>
+<FermionAction>
+<FermAct>UNPRECONDITIONED_NEF</FermAct>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.00195</Mass>
+  <FermionBC>
+    <FermBC>SIMPLE_FERMBC</FermBC>
+    <boundary>1 1 1 -1</boundary>
+  </FermionBC>
+</FermionAction>
+<InvertParam>
+<invType>QUDA_NEF_INVERTER</invType>
+<DoCGNR>true</DoCGNR>
+<MaxIter>13000</MaxIter>
+<RsdTarget>1.e-7</RsdTarget>
+<Delta>0.1</Delta>
+<RsdToleranceFactor>80</RsdToleranceFactor>
+<MaxResIncrease>1</MaxResIncrease>
+<SolverType>CG</SolverType>
+<Verbose>false</Verbose>
+<AsymmetricLinop>false</AsymmetricLinop>
+<CudaReconstruct>RECONS_NONE</CudaReconstruct>
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+<CudaSloppyReconstruct>RECONS_NONE</CudaSloppyReconstruct>
+<AxialGaugeFix>false</AxialGaugeFix>
+<AutotuneDslash>true</AutotuneDslash>
+<MatPCType>EVEN_EVEN</MatPCType>
+<checkSolution>true</checkSolution>
+<NEFParams>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.00195</Mass>
+  <clovCoeff>0</clovCoeff>
+</NEFParams>
+<AntiPeriodicT>true</AntiPeriodicT>
+</InvertParam>
+</Param>
+<NamedObject>
+  <gauge_id>D_field</gauge_id>
+  <source_id>src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_D</source_id>
+  <prop_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D</prop_id>
+</NamedObject>
+<xml_file>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/xml/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D.out.xml</xml_file>
+</elem>
+
+<elem>
+<Name>PROPAGATOR</Name>
+<Frequency>1</Frequency>
+<Param>
+<version>10</version>
+<quarkSpinType>FULL</quarkSpinType>
+<obsvP>true</obsvP>
+
+<numRetries>1</numRetries>
+<FermionAction>
+<FermAct>UNPRECONDITIONED_NEF</FermAct>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.0693</Mass>
+  <FermionBC>
+    <FermBC>SIMPLE_FERMBC</FermBC>
+    <boundary>1 1 1 -1</boundary>
+  </FermionBC>
+</FermionAction>
+<InvertParam>
+<invType>QUDA_NEF_INVERTER</invType>
+<DoCGNR>true</DoCGNR>
+<MaxIter>13000</MaxIter>
+<RsdTarget>1.e-7</RsdTarget>
+<Delta>0.1</Delta>
+<RsdToleranceFactor>80</RsdToleranceFactor>
+<MaxResIncrease>1</MaxResIncrease>
+<SolverType>CG</SolverType>
+<Verbose>false</Verbose>
+<AsymmetricLinop>false</AsymmetricLinop>
+<CudaReconstruct>RECONS_NONE</CudaReconstruct>
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+<CudaSloppyReconstruct>RECONS_NONE</CudaSloppyReconstruct>
+<AxialGaugeFix>false</AxialGaugeFix>
+<AutotuneDslash>true</AutotuneDslash>
+<MatPCType>EVEN_EVEN</MatPCType>
+<checkSolution>true</checkSolution>
+<NEFParams>
+  <OverMass>1.2</OverMass>
+  <N5>20</N5>
+  <b5>2.0</b5>
+  <c5>1.0</c5>
+  <Mass>0.0693</Mass>
+  <clovCoeff>0</clovCoeff>
+</NEFParams>
+<AntiPeriodicT>true</AntiPeriodicT>
+</InvertParam>
+</Param>
+<NamedObject>
+  <gauge_id>D_field</gauge_id>
+  <source_id>src_a12m130B_a_310_gf1.0_w3.0_n30_x15y34z14t36_mg0.0677_qe1.0_D</source_id>
+  <prop_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.0693_x15y34z14t36_mg0.0677_qe1.0_S</prop_id>
+</NamedObject>
+<xml_file>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/xml/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.0693_x15y34z14t36_mg0.0677_qe1.0_S.out.xml</xml_file>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/pseudo_pseudo_UD</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/midpoint_pseudo_UD</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U_MP</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D_MP</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/pseudo_pseudo_UU</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/midpoint_pseudo_UU</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U_MP</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U_MP</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/pseudo_pseudo_DD</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>MESON_CONTRACTIONS</Name>
+<MesonParams>
+<p2_max>0</p2_max>
+<particle_list>
+  <elem>piplus</elem>
+</particle_list>
+<h5_file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/spec/310/mres_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mu0.00195_md0.00195_x15y34z14t36_mg0.0677_qe1.0.h5</h5_file_name>
+<obj_path>/midpoint_pseudo_DD</obj_path>
+</MesonParams>
+  <NamedObject>
+    <up_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D_MP</up_quark>
+    <down_quark>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D_MP</down_quark>
+  </NamedObject>
+</elem>
+
+<elem>
+<Name>QIO_WRITE_ERASE_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U</object_id>
+  <object_type>LatticePropagatorF</object_type>
+</NamedObject>
+<File>
+  <file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/prop_u1/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U.lime</file_name>
+  <file_volfmt>SINGLEFILE</file_volfmt>
+  <parallel_io>true</parallel_io>
+</File>
+</elem>
+
+<elem>
+<Name>ERASE_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_U_MP</object_id>
+</NamedObject>
+</elem>
+
+<elem>
+<Name>QIO_WRITE_ERASE_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D</object_id>
+  <object_type>LatticePropagatorF</object_type>
+</NamedObject>
+<File>
+  <file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/prop_u1/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D.lime</file_name>
+  <file_volfmt>SINGLEFILE</file_volfmt>
+  <parallel_io>true</parallel_io>
+</File>
+</elem>
+
+<elem>
+<Name>ERASE_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.00195_x15y34z14t36_mg0.0677_qe1.0_D_MP</object_id>
+</NamedObject>
+</elem>
+
+<elem>
+<Name>QIO_WRITE_ERASE_NAMED_OBJECT</Name>
+<Frequency>1</Frequency>
+<NamedObject>
+  <object_id>prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.0693_x15y34z14t36_mg0.0677_qe1.0_S</object_id>
+  <object_type>LatticePropagatorF</object_type>
+</NamedObject>
+<File>
+  <file_name>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/prop_u1/310/prop_a12m130B_a_310_gf1.0_w3.0_n30_M51.2_L520_a3.0_mq0.0693_x15y34z14t36_mg0.0677_qe1.0_S.lime</file_name>
+  <file_volfmt>SINGLEFILE</file_volfmt>
+  <parallel_io>true</parallel_io>
+</File>
+</elem>
+
+
+  </InlineMeasurements>
+   <nrow>48 48 48 64</nrow>
+</Param>
+
+<Cfg>
+ <cfg_type>SCIDAC</cfg_type>
+ <cfg_file>/gpfs/alpine2/proj-shared/lgt128/production/a12m130B_a/cfgs_flow/l4864f211b600m00184m0507m628a.310_wflow1.0.lime</cfg_file>
+  <parallel_io>true</parallel_io>
+</Cfg>
+</lalibe>
